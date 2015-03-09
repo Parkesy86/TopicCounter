@@ -212,27 +212,27 @@ if (0 === window.location.href.indexOf('http://www.myfreecams.com/mfc2/static/pl
         NDeduct = " tip not deducted";
         //spank for
         TpcSpec1 = 30;
-        TpcSpecTxt1 = " a da o palma pentru";
+        TpcSpecTxt1 = " spank for";
         AllowSpecial1 = true;
         //feet for
         TpcSpec2 = 50;
-        TpcSpecTxt2 = " picioare pentru ";
+        TpcSpecTxt2 = " feet for ";
         AllowSpecial2 = true;
         //blowjob tease for
         TpcSpec3 = 120;
-        TpcSpecTxt3 = " sicana botic pentru ";
+        TpcSpecTxt3 = " deepthroat tease for ";
         AllowSpecial3 = true;
         //polaroid for
         TpcSpec4 = 250;
-        TpcSpecTxt4 = " polaroid pentru ";
+        TpcSpecTxt4 = " polaroid for ";
         AllowSpecial4 = true;
         //snapchat for
         TpcSpec5 = 300;
-        TpcSpecTxt5 = " snapchat pentru ";
+        TpcSpecTxt5 = " snapchat for ";
         AllowSpecial5 = true;
         //flash for
         TpcSpec6 = 66;
-        TpcSpecTxt6 = " expune pentru ";
+        TpcSpecTxt6 = " flash for ";
         AllowSpecial6 = true;
         //video special for - speciale video pentru
         //allow video tips to add to topic? (change allowvideo# to true to count to topic or false to not count)
@@ -297,9 +297,9 @@ if (0 === window.location.href.indexOf('http://www.myfreecams.com/mfc2/static/pl
             TwitMsg = "make sure to follow $$model$$ on Twitter".replace("$$model$$", currentModelName);
             VidMsg = "tips for videos & snapchat etc all count to topic";
             if (countDown >= T1) {
-                postChatMessage(PMValue + " setat subiecte la:  " + Topic1 + "," + Topic2 + "," + Topic3 + "," + Topic4);
-                postChatMessage(PMValue + " setat subiecte speciale la " + TpcSpec1 + "," + TpcSpec2 + "," + TpcSpec3 + "," + TpcSpec4 + "," + TpcSpec5 + "," + TpcSpec6);
-                postChatMessage(PMValue + " Subiecte: " + TopicText1);
+                postChatMessage(PMValue + " Topics Set To:  " + Topic1 + "," + Topic2 + "," + Topic3 + "," + Topic4);
+                postChatMessage(PMValue + " Topic Specials Set To " + TpcSpec1 + "," + TpcSpec2 + "," + TpcSpec3 + "," + TpcSpec4 + "," + TpcSpec5 + "," + TpcSpec6);
+                postChatMessage(PMValue + " Topic: " + TopicText1);
                 postChatMessage("/mute guest on");
                 postChatMessage("/mute basic on");
                 postChatMessage("/topic " + TopicText1);
@@ -568,7 +568,7 @@ if (0 === window.location.href.indexOf('http://www.myfreecams.com/mfc2/static/pl
             }
         }
         function assignForVideo(amount, contributor) {
-            postChatMessage(PMValue + contributor + " a trimis " + amount + " pentru un film");
+            postChatMessage(PMValue + contributor + " has tipped " + amount + " for a video");
             adjustCountDown(amount);
         }
         function adjustTopicSpecials(amount, contributor) {
@@ -725,7 +725,7 @@ if (0 === window.location.href.indexOf('http://www.myfreecams.com/mfc2/static/pl
                 autoPostActive = true;
                 postChatMessage("/topic " + TopicText2);
                 postChatMessage(TwitMsg);
-                postChatMessage(PMValue + " urmatoral subiect: " + TopicText2);
+                postChatMessage(PMValue + " Next Topic: " + TopicText2);
                 postChatMessage(VidMsg);
             }
             else {
@@ -745,7 +745,7 @@ if (0 === window.location.href.indexOf('http://www.myfreecams.com/mfc2/static/pl
                 autoPostActive = true;
                 postChatMessage("/topic " + TopicText3);
                 postChatMessage(TwitMsg);
-                postChatMessage(PMValue + " urmatoral subiect: " + TopicText3);
+                postChatMessage(PMValue + " Next Topic: " + TopicText3);
                 postChatMessage(VidMsg);
             }
             else {
@@ -765,8 +765,8 @@ if (0 === window.location.href.indexOf('http://www.myfreecams.com/mfc2/static/pl
                 if (autoPostActive) {
                     postChatMessage(TwitMsg);
                     postChatMessage("/topic " + InterimTopic);
-                    postChatMessage(PMValue + " terminat subiect, 10 min intarziere inainte de urmatoral subiectul este postat");
-                    postChatMessage(PMValue + " urmatoral subiect: " + TopicText4);
+                    postChatMessage(PMValue + " Topic complete, 15min interim topic before next one is posted");
+                    postChatMessage(PMValue + " next topic: " + TopicText4);
                     postChatMessage(VidMsg);
                 }
                 autoPostActive = false;
@@ -792,8 +792,8 @@ if (0 === window.location.href.indexOf('http://www.myfreecams.com/mfc2/static/pl
                 if (autoPostActive) {
                     postChatMessage(TwitMsg);
                     postChatMessage("/topic " + InterimTopic);
-                    postChatMessage(PMValue + " terminat subiect, 10 min intarziere inainte de urmatoral subiectul este postat");
-                    postChatMessage(PMValue + " urmatoral subiect: " + TopicText5);
+                    postChatMessage(PMValue + " topic complete, 15min interim topic before next countdown is begun");
+                    postChatMessage(PMValue + " next topic: " + TopicText5);
                     postChatMessage(VidMsg);
                 }
                 autoPostActive = false;
